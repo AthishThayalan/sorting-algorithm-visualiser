@@ -2,6 +2,7 @@ let sort = "";
 let message;
 let generateArrayClicked = false;
 
+
 function updateMessage() {
   if (sort === "") {
     message =
