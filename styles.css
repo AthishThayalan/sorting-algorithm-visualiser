@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.array-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes barAppear {
+  from {
+    transform: scaleX(0); /* Start with no width */
+  }
+  to {
+    transform: scaleX(1); /* End with full width */
+  }
+}
+
+.array-bar {
+  display: inline-block;
+  background-color: dodgerblue;
+  margin: 0 1px;
+  width: 40px;
+  height: 20px;
+  animation: barAppear 0.3s ease-out; /* Apply animation */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+.info-box {
+  margin-top: 30px; 
+  width: 60%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-selected {
+  outline: 2px solid #45a049; /* Adjust the color and thickness of the outline as needed */
+}
+
+@media only screen and (max-width: 600px) {
+  .array-bar {
+    width: 18px;
+    
+  }
+  
+
+}
